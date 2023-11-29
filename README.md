@@ -10,9 +10,7 @@ The Dockerfile in this repository starts from the base Emitter image and include
 
 A shell script is provided to generate self-signed SSL certificates. This script creates a `certs` directory, then generates a new private key (`key.pem`) and a self-signed certificate (`cert.pem`).
 
-
-## Production Ready SMP_Solution Adjustments 
-In production you can amend this to replace the self signed certs with certs for the `App Service Url` and adjust `MqttNetworkChannel.cs` file on line 268-271 disabling the self-signed validation on `line 271` and enabling the production validation on `line 268`
+**In production you can amend the process to replace the self signed certs with certs**
 
 ## Steps to Build and Run
 
